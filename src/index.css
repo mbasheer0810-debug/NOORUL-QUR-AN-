@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-quran: 'Amiri Quran', 'Scheherazade New', 'Amiri', serif;
+    --font-arabic: 'Amiri', 'Scheherazade New', serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+  }
+}
+
+.font-quran {
+  font-family: var(--font-quran);
+  line-height: 2.4;
+  word-spacing: 0.15em;
+  font-feature-settings: "cv01" on, "cv02" on;
+}
+
+.font-arabic {
+  font-family: var(--font-arabic);
+}
+
+/* Islamic Geometric Border & Gold Accents */
+.gold-gradient {
+  background: linear-gradient(135deg, #FEF08A 0%, #F59E0B 50%, #D97706 100%);
+}
+
+.emerald-gradient {
+  background: linear-gradient(135deg, #065F46 0%, #047857 60%, #064E3B 100%);
+}
+
+.gold-border {
+  border-color: #F59E0B;
+}
+
+/* Hide scrollbar for kid-friendly horizontal scrolls */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Kid tactile button press */
+.btn-tactile {
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+.btn-tactile:active {
+  transform: translateY(2px) scale(0.98);
+}
+
+/* Pulse glow for current reciting verse */
+@keyframes verse-pulse {
+  0%, 100% {
+    box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.25);
+  }
+  50% {
+    box-shadow: 0 0 0 6px rgba(245, 158, 11, 0.4);
+  }
+}
+
+.active-reciting {
+  animation: verse-pulse 2s infinite ease-in-out;
+}

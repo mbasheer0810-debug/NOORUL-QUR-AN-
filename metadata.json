@@ -1,0 +1,8 @@
+{
+  "name": "Remix NOORUL QURAN - Children\u0027s Quran Learning",
+  "description": "Interactive Islamic Quran recitation and memorization app for children aged 6–10 in Arabic and Hausa with verified audio and offline progress.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

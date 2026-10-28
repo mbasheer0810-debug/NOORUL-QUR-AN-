@@ -1,0 +1,39 @@
+{
+  "id": "/",
+  "name": "NOORUL QURAN - Children's Quran Learning",
+  "short_name": "NoorulQuran",
+  "description": "Children's Quran recitation and memorization app for kids aged 6-10 in Arabic and Hausa with verified audio.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#FAF8F2",
+  "theme_color": "#047857",
+  "categories": ["education", "books", "kids"],
+  "icons": [
+    {
+      "src": "/pwa-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-maskable-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
